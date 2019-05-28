@@ -7,7 +7,7 @@ class Anagram
     @words = words
   end
   
-  def self.match(words)
+  def self.match(check_words)
     words.split("").sort == check_words.split("").sort
   end
 end
