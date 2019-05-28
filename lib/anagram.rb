@@ -1,6 +1,6 @@
 # Your code goes here!
 class Anagram
-  attr_accessor :words
+  attr_accessor :words, :check_words
   
   
   def initialize(words)
@@ -8,6 +8,6 @@ class Anagram
   end
   
   def self.match(words)
-    words.split("").sort
+    words.split("").sort == check_words.split("").sort
   end
 end
